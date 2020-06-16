@@ -1,0 +1,80 @@
+Task 1
+
+Please read and learn about these topics wrt laravel,
+● Models, Views, Controller, Routing
+● Eloquent ORM https://laravel.com/docs/5.8/eloquent
+● OOPS - Classes and Objects
+● Develop a basic web application in PHP using Laravel (MVC) framework
+● Host the web application on a free web hosting server. Share this URL.
+● Deliverables/tasks:
+  ○ Use Laravel eloquent for DB.
+  ○ Controller file name: ATGController.php
+   ○ One user form - three fields - name, email, pincode and SUBMIT
+  ○ Anyone should be able to enter his name, email and his current pincode
+   ○ Backend: Email validation and pincode (6 digits exact) validation
+   ○ On clicking submit, the data should get stored in the database.
+   ○ There should NOT be any duplicate data. So, in case I am entering the same
+data twice, I should get a flash message or some notification that the data
+already exists in the DB.
+   ○ On successful entering the data, there should be a notification too.
+● Github link not to be shared unless asked by hiring manager. Progress will be primarily
+tracked via the free web server.
+● Proper use of Models, Controllers, Views is mandatory.
+● Use of objects using model classes preferred.
+
+Deadline to submit task: 8 June, 3.30 pm
+
+All the Best🙂
+
+------------------------------------------------------------------------------------------
+
+Task 2
+
+1. Model, View created in task 1 should NOT be changed in this task. If need arises, ask on
+the group with clarification.
+
+2. When user successfully enters new/different data (that is accepted into database), user
+should get an email ( for this task, you can just put a LOG statement that ‘EMAIL SENT’
+OR you can code that also, if you wish ;-) ). If the email sending fails, we should be able
+to LOG that error as well.
+
+3. Create a Restful API in a new controller file (WebServicesController.php) for the same
+deliverables/tasks in task 1. Choose human readable API request and response with
+status:0|1 and message as two mandatory response keys.
+
+4. Eloquent and email logic should be moved to a common ‘PHP trait’ file. At end of this
+task, there should be NO duplicate statement inside class in both the controllers. Take
+your own fair judgement on how will you move the logic into the trait file and reuse that
+trait function in both controllers.
+
+Mode of submission:
+As part of submission,
+1. Send a < 30 sec video (with your audio) demonstrating the following:
+a. Show your laravel log file. Should be empty or not there.
+b. Call the API (using postman). Explain the API response. Log statement should be
+recorded that ‘EMAIL SENT’
+c. Call the API again (with same parameters). Explain API response. Log statement
+should NOT be recorded.
+d. Insert same parameters in the web form. Log statement should NOT be seen and
+the ERROR message should be seen.
+e. Insert new parameters in the web form. Log statement should be seen and the
+SUCCESS message should be seen.
+
+All the Best🙂
+
+-------------------------------------------------
+
+Task 3
+
+Convert your web form to use API for submitting data using AJAX. Use the route/function
+in WebServicesController.php file (task 2) and NOT the ATGcontroller.php file (task 1)
+on the web application form itself using AJAX.
+
+● There should be no page refreshes at all (that’s what AJAX means).
+
+● Based on the API’s JSON response, AJAX call should be able to determine the
+response and show the appropriate message.
+
+● Frontend: Email validation and pincode (6 digits exact) validation
+
+All the Best😊
